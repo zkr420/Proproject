@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+
+
+
+import React from 'react';
+import Profile from './Profile/Profile';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile
+        fullName="ZAKARIA SAIDI"
+        bio="Experienced full stack developer with 5+ years of experience in developing web applications using HTML, CSS, JavaScript, Node. js, React. js and MongoDB. Seeking to leverage my skillset and expertise to help XYZ Company achieve their objectives and create innovative solutions."
+        profession="Developer"
+        handleName={() => alert('Hello zakaria saidi')}
+      >
+        https://source.unsplash.com/200x200/?profile
+      </Profile>
     </div>
   );
 }
 
 export default App;
+
